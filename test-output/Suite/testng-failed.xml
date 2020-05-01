@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="Password123"/>
+    <parameter name="confirmpassword" value="Password123"/>
+    <parameter name="email" value="vanj02568a@gmail.com"/>
+    <parameter name="username" value="test1"/>
+    <classes>
+      <class name="org.tcs.test.FaceBookLogIn">
+        <methods>
+          <include name="testNGHome"/>
+          <include name="CloseBrowser"/>
+          <include name="testNGOverview"/>
+          <include name="testNGWriteTest"/>
+          <include name="testNGEnvrn"/>
+          <include name="browserReady"/>
+        </methods>
+      </class> <!-- org.tcs.test.FaceBookLogIn -->
+      <class name="org.tcs.test.Paramet">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="signUp" invocation-numbers="0"/>
+          <include name="browserReady"/>
+        </methods>
+      </class> <!-- org.tcs.test.Paramet -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
